@@ -23,29 +23,28 @@
 | Column                 | Type       | Options                        |
 | ---------------------- | ---------- | ------------------------------ |
 | name                   | string     | null: false                    |
-| image                  | string     | null: false                    |
 | explanation            | text       | null: false                    |
 | category               | string     | null: false                    |
 | status                 | string     | null: false                    |
 | postage                | string     | null: false                    |
-| shipping_information   | string     | null: false                    |
-| shipping days          | date       | null: false                    |
-| price                  | string     | null: false                    |
+| prefectures            | string     | null: false                    |
+| shipping_days          | date       | null: false                    |
+| price                  | integer    | null: false                    |
 | seller                 | references | null: false, foreign_key: true |
 | buyer                  | references | null: false, foreign_key: true |
 
 ### Association
 
 - belongs_to :user
-- has_one :documents
+- has_one :document
 - has_one_active_hash :purchase_info
 
 ## documents テーブル
 
 | Column  | Type       | Options                        |
 | ------- | ---------- | ------------------------------ |
-| user_id | references | null: false, foreign_key: true |
-| item_id | references | null: false, foreign_key: true |
+| user    | references | null: false, foreign_key: true |
+| item    | references | null: false, foreign_key: true |
 
 ### Association
 
@@ -58,12 +57,12 @@
 | Column            | Type       | Options                        |
 | ----------------- | ---------- | ------------------------------ |
 | postal_code       | string     | null: false                    |
-| prefectures       | references | null: false, foreign_key: true |
+| prefectures       | string     | null: false                    |
 | municipalities    | string     | null: false                    |
 | address           | string     | null: false                    |
 | building_name     | string     |                                |
 | tell              | string     | null: false                    |
-| document_id       | references | null: false, foreign_key: true |
+| document          | references | null: false, foreign_key: true |
 
 ### Association
 
