@@ -6,7 +6,7 @@
 | ------------------ | ------ | ------------------------- |
 | nickname           | string | null: false               |
 | email              | string | null: false, unique: true |
-| encrypted_password | string | null: false, unique: true |
+| encrypted_password | string | null: false               |
 | family_name        | string | null: false               |
 | first_name         | string | null: false               |
 | family_name_kana   | string | null: false               |
@@ -24,10 +24,10 @@
 | ---------------------- | ---------- | ------------------------------ |
 | name                   | string     | null: false                    |
 | explanation            | text       | null: false                    |
-| category               | string     | null: false                    |
-| status                 | string     | null: false                    |
-| postage                | string     | null: false                    |
-| prefectures            | string     | null: false                    |
+| category_id            | integer    | null: false                    |
+| status_id              | integer    | null: false                    |
+| postage_id             | integer    | null: false                    |
+| prefectures_id         | integer    | null: false                    |
 | shipping_days          | date       | null: false                    |
 | price                  | integer    | null: false                    |
 | seller                 | references | null: false, foreign_key: true |
@@ -37,7 +37,6 @@
 
 - belongs_to :user
 - has_one :document
-- has_one_active_hash :purchase_info
 
 ## documents テーブル
 
@@ -57,7 +56,7 @@
 | Column            | Type       | Options                        |
 | ----------------- | ---------- | ------------------------------ |
 | postal_code       | string     | null: false                    |
-| prefectures       | string     | null: false                    |
+| prefectures_id    | string     | null: false                    |
 | municipalities    | string     | null: false                    |
 | address           | string     | null: false                    |
 | building_name     | string     |                                |
