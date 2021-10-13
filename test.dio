@@ -22,7 +22,7 @@
                 <mxCell id="37" value="items" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
                     <mxGeometry x="590" y="80" width="160" height="350" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="name&#10;&#10;image&#10;&#10;explanation&#10;&#10;category_id&#10;&#10;status_id&#10;&#10;postage_id&#10;&#10;prefectures_id&#10;&#10;shipping_days&#10;&#10;price&#10;&#10;seller&#10;&#10;buyer" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="37">
+                <mxCell id="38" value="name&#10;&#10;image&#10;&#10;explanation&#10;&#10;category_id&#10;&#10;status_id&#10;&#10;postage_id&#10;&#10;prefectures_id&#10;&#10;shipping_days_id&#10;&#10;price&#10;&#10;seller&#10;&#10;buyer" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="37">
                     <mxGeometry y="26" width="160" height="324" as="geometry"/>
                 </mxCell>
                 <mxCell id="59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmany;startFill=0;endArrow=ERone;endFill=0;endSize=10;startSize=10;" edge="1" parent="1" source="41">
@@ -50,7 +50,7 @@
                 <mxCell id="45" value="purchase_info" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
                     <mxGeometry x="300" y="469" width="160" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" value="postal_code&#10;&#10;prefectures_id&#10;&#10;municipalities&#10;&#10;address&#10;&#10;building_name&#10;&#10;tell&#10;&#10;document" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="45">
+                <mxCell id="46" value="postal_code&#10;&#10;prefectures&#10;&#10;municipalities&#10;&#10;address&#10;&#10;building_name&#10;&#10;tell&#10;&#10;document" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="45">
                     <mxGeometry y="26" width="160" height="204" as="geometry"/>
                 </mxCell>
                 <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;endSize=10;startSize=10;" edge="1" parent="1" source="34">

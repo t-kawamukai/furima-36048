@@ -28,7 +28,7 @@
 | status_id              | integer    | null: false                    |
 | postage_id             | integer    | null: false                    |
 | prefectures_id         | integer    | null: false                    |
-| shipping_days          | date       | null: false                    |
+| shipping_days_id       | date       | null: false                    |
 | price                  | integer    | null: false                    |
 | seller                 | references | null: false, foreign_key: true |
 | buyer                  | references | null: false, foreign_key: true |
@@ -56,7 +56,7 @@
 | Column            | Type       | Options                        |
 | ----------------- | ---------- | ------------------------------ |
 | postal_code       | string     | null: false                    |
-| prefectures_id    | string     | null: false                    |
+| prefectures       | integer    | null: false                    |
 | municipalities    | string     | null: false                    |
 | address           | string     | null: false                    |
 | building_name     | string     |                                |
