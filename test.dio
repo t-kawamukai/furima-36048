@@ -20,10 +20,10 @@
                     <mxGeometry y="230" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="37" value="items" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-                    <mxGeometry x="590" y="80" width="160" height="350" as="geometry"/>
+                    <mxGeometry x="590" y="80" width="160" height="320" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="name&#10;&#10;image&#10;&#10;explanation&#10;&#10;category_id&#10;&#10;status_id&#10;&#10;postage_id&#10;&#10;prefectures_id&#10;&#10;shipping_days_id&#10;&#10;price&#10;&#10;seller&#10;&#10;buyer" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="37">
-                    <mxGeometry y="26" width="160" height="324" as="geometry"/>
+                <mxCell id="38" value="name&#10;&#10;image&#10;&#10;explanation&#10;&#10;category_id&#10;&#10;status_id&#10;&#10;postage_id&#10;&#10;prefecture_id&#10;&#10;shipping_day_id&#10;&#10;price&#10;&#10;user" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="37">
+                    <mxGeometry y="26" width="160" height="294" as="geometry"/>
                 </mxCell>
                 <mxCell id="59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmany;startFill=0;endArrow=ERone;endFill=0;endSize=10;startSize=10;" edge="1" parent="1" source="41">
                     <mxGeometry relative="1" as="geometry">
