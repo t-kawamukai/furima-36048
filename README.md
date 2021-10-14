@@ -31,7 +31,6 @@
 | shipping_day_id        | integer    | null: false                    |
 | price                  | integer    | null: false                    |
 | user                   | references | null: false, foreign_key: true |
-| buyer                  | references | null: false, foreign_key: true |
 
 ### Association
 
