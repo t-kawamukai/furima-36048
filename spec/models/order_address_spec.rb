@@ -35,6 +35,11 @@ RSpec.describe OrderAddress, type: :model do
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include("Prefecture can't be blank")
       end
+      it 'prefectureを選択していないと保存できないこと' do
+        @order_address.prefecture_id = 0
+        @order_address.valid?
+        expect(@order_address.errors.full_messages).to include("Prefecture can't be blank")
+      end
       it 'municipalitiesが空だと保存できないこと' do
         @order_address.municipalities = nil
         @order_address.valid?
@@ -50,20 +55,20 @@ RSpec.describe OrderAddress, type: :model do
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include("Tell can't be blank")
       end
-      it 'tellは半額の数字以外では保存できないこと' do
-        @order_address.tell = 'dskajfladksjf'
+      it 'tellは半角の数字以外では保存できないこと' do
+        @order_address.tell = 'テスト'
         @order_address.valid?
-        expect(@order_address.errors.full_messages).to include("Tell is invalid")
+        expect(@order_address.errors.full_messages).to include("Tell is invalid.")
       end
-      it 'tellは10桁未満12桁以上では保存できなこと' do
+      it 'tellは10桁未満では保存できなこと' do
         @order_address.tell = 1
         @order_address.valid?
-        expect(@order_address.errors.full_messages).to include("Tell is invalid")
+        expect(@order_address.errors.full_messages).to include("Tell is invalid.")
       end
-      it 'tellは10桁未満12桁以上では保存できなこと' do
+      it 'tellは12桁以上では保存できなこと' do
         @order_address.tell = 12345678910000
         @order_address.valid?
-        expect(@order_address.errors.full_messages).to include("Tell is invalid")
+        expect(@order_address.errors.full_messages).to include("Tell is invalid.")
       end
       it 'userが紐付いていないと保存できないこと' do
         @order_address.user_id = nil
