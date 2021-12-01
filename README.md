@@ -16,7 +16,7 @@
 ### Association
 
 - has_many :items
-- has_many :documents
+- has_many :orders
 
 ## items テーブル
 
@@ -35,9 +35,9 @@
 ### Association
 
 - belongs_to :user
-- has_one :document
+- has_one :order
 
-## documents テーブル
+## Orders テーブル
 
 | Column  | Type       | Options                        |
 | ------- | ---------- | ------------------------------ |
@@ -48,21 +48,21 @@
 
 - belongs_to :user
 - belongs_to :item
-- has_one :purchase_info
+- has_one :address
 
-## purchase_info テーブル
+## Addresses テーブル
 
 | Column            | Type       | Options                        |
 | ----------------- | ---------- | ------------------------------ |
 | postal_code       | string     | null: false                    |
 | prefecture_id     | integer    | null: false                    |
 | municipalities    | string     | null: false                    |
-| address           | string     | null: false                    |
+| house_number      | string     | null: false                    |
 | building_name     | string     |                                |
 | tell              | string     | null: false                    |
-| document          | references | null: false, foreign_key: true |
+| order             | references | null: false, foreign_key: true |
 
 ### Association
 
-- belongs_to :document
+- belongs_to :order
 - belongs_to_active_hash :item
